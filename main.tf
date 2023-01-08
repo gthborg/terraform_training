@@ -9,3 +9,7 @@ module "ec2instance" {
   }
 }
 
+output "IP" {
+  value = module.ec2instance.publicip
+  
+}
